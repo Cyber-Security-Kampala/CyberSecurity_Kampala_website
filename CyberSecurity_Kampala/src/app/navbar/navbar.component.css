@@ -1,0 +1,95 @@
+/* Basic styling for the toolbar */
+mat-toolbar {
+    position: fixed; /* Fixed position at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100; /* Ensure it stays on top of other elements */
+  }
+  
+  /* Styling for the spacer elements */
+  .example-spacer {
+    flex: 1 1 auto; /* Take up available space */
+  }
+  
+  /* Styling for the navigation links */
+  mat-button {
+    color: white; /* Text color for primary toolbar */
+    margin-right: 16px; /* Adjust spacing between buttons */
+  }
+  
+  /* Styling for the search icon */
+  mat-icon {
+    cursor: pointer; /* Indicate it's clickable */
+  }
+  
+  /* Additional customization options: */
+  
+  /* Change the toolbar color: */
+  mat-toolbar[color="primary"] {
+    background-color: transparent; /* Default primary color */
+  }
+  
+  /* Adjust font size and weight for links: */
+  mat-button {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  /* Center the links: */
+  mat-toolbar {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Add padding to the toolbar: */
+  mat-toolbar {
+    padding: 16px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: flex-end; /* align items to the end of the container */
+    flex-grow: 1;
+  }
+  
+  .nav-links a {
+    color: white;
+    margin-left: 20px; /* adjust as needed */
+    transition: color 0.3s ease; /* transition effect */
+}
+
+.nav-links a:hover {
+  color: #ffb8b8; /* change color on hover */
+}
+
+  .example-spacer {
+    flex-grow: 2;
+  }
+  .logo {
+    color: white;
+    font-size: 30px;
+  }
+  .end {
+    display: flex;
+    justify-content: flex-end;
+    size: 10px;
+    color: rgb(65, 32, 214);
+  }
+
+
+  hr {
+    margin-top: 64px;
+    border-top: 1px solid white;
+    width: 100%;
+   }
+   
+    .toolbar-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+     }
+   
