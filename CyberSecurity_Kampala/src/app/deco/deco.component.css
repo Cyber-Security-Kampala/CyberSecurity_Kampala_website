@@ -3,4 +3,24 @@
     background-size: cover; /* cover the entire page */
     background-position: center; /* center the image */
     height: 100vh; /* make the landing page full height */
+    display: flex; /* use Flexbox */
+    align-items: center; /* center items vertically */
+    justify-content: flex-start; /* align items to the left */
+    padding-left: 20px; /* add some space from the left edge */
+  }
+  
+  .label {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: block;
+    text-align: left;
+    /* font-family: 'Montserrat', sans-serif; */
+  }
+  .label h1 {
+    font-family: 'Audiowide', cursive;
   }
