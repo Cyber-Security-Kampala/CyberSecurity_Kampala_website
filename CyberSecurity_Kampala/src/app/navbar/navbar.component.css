@@ -27,7 +27,7 @@ mat-toolbar {
   
   /* Change the toolbar color: */
   mat-toolbar[color="primary"] {
-    background-color: #b19c80; /* Default primary color */
+    background-color: transparent; /* Default primary color */
   }
   
   /* Adjust font size and weight for links: */
@@ -77,4 +77,10 @@ mat-toolbar {
     justify-content: flex-end;
     size: 10px;
     color: rgb(65, 32, 214);
+  }
+
+  .my-line {
+    border: 0;
+    height: 1px;
+    background: #333;
   }
