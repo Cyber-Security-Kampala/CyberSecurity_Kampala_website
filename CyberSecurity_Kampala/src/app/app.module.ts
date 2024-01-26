@@ -10,6 +10,9 @@ import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DecoComponent } from './deco/deco.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatDividerModule } from '@angular/material/divider';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +26,9 @@ import { DecoComponent } from './deco/deco.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatFormFieldModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

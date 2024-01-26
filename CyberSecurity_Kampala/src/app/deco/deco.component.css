@@ -24,3 +24,26 @@
   .label h1 {
     font-family: 'Audiowide', cursive;
   }
+
+  .email-container {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+   }
+   
+   .email-input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+   }
+   
+   .email-button {
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+   }
+   
