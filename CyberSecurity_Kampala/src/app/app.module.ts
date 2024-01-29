@@ -12,6 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { DecoComponent } from './deco/deco.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDividerModule } from '@angular/material/divider';
+import { IntroductionComponent } from './introduction/introduction.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { MatDividerModule } from '@angular/material/divider';
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    DecoComponent
+    DecoComponent,
+    IntroductionComponent
   ],
   imports: [
     BrowserModule,
