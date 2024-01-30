@@ -1,0 +1,34 @@
+h4{
+    padding-left: 200px;
+    font-size: 25px;
+}
+
+
+.row1 p{
+    padding-left: 90px;
+    font-size: 55px;
+    line-height: 0.7px;
+}
+
+.row2 p{
+    /* background-color: blue; */
+    padding-left: 90px;
+    
+}
+
+.row3 p{
+    /* background-color: brown; */
+    padding-left: 90px;
+    font-size: 47px;
+    line-height: 0.7px;
+    padding-top: 15px;
+}
+
+.row4 p{
+    /* background-color: green; */
+    padding-left: 90px;
+    font-size: 47px;
+    line-height: 0.7px;
+    padding-top: 15px;
+}
+
