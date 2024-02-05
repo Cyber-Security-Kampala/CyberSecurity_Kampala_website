@@ -4,11 +4,13 @@
     color: #333; /* Change this to your preferred color */
 }
 .site-footer .row {
+    padding: 22px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
 .site-footer h3 {
+    padding-right: 22px;
     margin-bottom: 15px;
     color: #333; /* Change this to your preferred color */
 }
@@ -18,8 +20,11 @@
     margin-bottom: 5px;
 }
 .site-footer form {
+    padding-right: 22px;
     margin-top: 20px;
 }
+
+
 
 .site-footer form input[type="email"] {
     width: 100%;
