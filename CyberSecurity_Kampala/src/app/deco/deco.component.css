@@ -1,5 +1,5 @@
 .landing-page {
-    background-image: url('/assets/images/home-bg.jpg'); /* replace with the path to your image */
+    background-image: url('/assets/images/alt-home-bg.jpg'); /* replace with the path to your image */
     background-size: cover; /* cover the entire page */
     background-position: center; /* center the image */
     height: 100vh; /* make the landing page full height */
