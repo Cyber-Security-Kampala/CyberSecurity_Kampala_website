@@ -10,7 +10,7 @@
   }
   
   .label {
-    color: #fff;
+    color: #f70909;
     font-size: 15px;
     font-weight: 400;
     text-transform: uppercase;
@@ -32,7 +32,7 @@
    }
    
    .email-input {
-    border: 1px solid #ccc;
+    border: 1px solid #f01a1a;
     padding: 10px;
     border-radius: 20px 0 0 20px;
     outline: none;
@@ -46,4 +46,22 @@
     border-radius: 0 20px 20px 0;
     cursor: pointer;
    }
-   
+
+
+   .emphasized-text {
+    font-family: 'Audiowide', cursive;
+    /* Add any other styles you want to share */
+  }
+  
+  .label emphasized-text {
+    /* You can still add specific styles for .label h1 if needed */
+    font-size: 80px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: block;
+    text-align: left;
+  }
+  
