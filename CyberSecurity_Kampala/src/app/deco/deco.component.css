@@ -53,8 +53,7 @@
     /* Add any other styles you want to share */
   }
   
-  .label emphasized-text {
-    /* You can still add specific styles for .label h1 if needed */
+  .label .emphasized-text {
     font-size: 80px;
     font-weight: 400;
     text-transform: uppercase;
@@ -63,5 +62,5 @@
     margin-top: 10px;
     display: block;
     text-align: left;
-  }
+}
   
