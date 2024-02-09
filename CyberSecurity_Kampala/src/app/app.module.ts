@@ -14,6 +14,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDividerModule } from '@angular/material/divider';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { FooterComponent } from './footer/footer.component';
+import { TeamComponent } from './team/team.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { FooterComponent } from './footer/footer.component';
     NavbarComponent,
     DecoComponent,
     IntroductionComponent,
-    FooterComponent
+    FooterComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,
