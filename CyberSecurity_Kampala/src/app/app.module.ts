@@ -15,6 +15,8 @@ import { MatDividerModule } from '@angular/material/divider';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { FooterComponent } from './footer/footer.component';
 import { TeamComponent } from './team/team.component';
+import { ScrollingModule } from '@angular/cdk/scrolling';
+import { MatStepperModule } from '@angular/material/stepper';
 
 
 @NgModule({
@@ -34,7 +36,13 @@ import { TeamComponent } from './team/team.component';
     MatToolbarModule,
     MatIconModule,
     MatFormFieldModule,
-    MatDividerModule
+    MatDividerModule,
+    ScrollingModule,
+    MatStepperModule
+  ],
+  exports: [
+    // Export MatStepperModule if you want to use the stepper in other modules
+    MatStepperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

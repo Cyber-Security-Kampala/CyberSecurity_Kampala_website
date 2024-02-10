@@ -1,23 +1,14 @@
 <div class="team">
     <div class="team__header">
-        <h1>Meet the Team</h1>
+      <h1>Meet the Team</h1>
     </div>
-    <div class="team__members">
-        <!-- Your team member divs here -->
-        <div class="team__member">
-            <img src="assets/images/team-member-1.jpg" alt="Team Member 1">
-            <h2>John Doe</h2>
-            <p>CEO</p>
-        </div>
-        <div class="team__member">
-            <img src="assets/images/team-member-2.jpg" alt="Team Member 2">
-            <h2>Jane Doe</h2>
-            <p>CTO</p>
-        </div>
-        <div class="team__member">
-            <img src="assets/images/team-member-3.jpg" alt="Team Member 3">
-            <h2>John Smith</h2>
-            <p>COO</p>
-        </div>
-    </div>
-</div>
+    <mat-horizontal-stepper>
+      <mat-step *ngFor="let member of teamMembers">
+        <ng-template matStepLabel>{{ member.name }}</ng-template>
+        <img [src]="member.imageUrl" alt="{{ member.name }}">
+        <h2>{{ member.name }}</h2>
+        <p>{{ member.position }}</p>
+      </mat-step>
+    </mat-horizontal-stepper>
+  </div>
+  
