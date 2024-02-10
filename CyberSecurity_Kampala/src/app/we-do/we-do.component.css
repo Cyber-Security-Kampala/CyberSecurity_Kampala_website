@@ -1,0 +1,29 @@
+.three-columns {
+    display: flex;
+    justify-content: center; /* Horizontally center the columns */
+  }
+  
+  .column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  #column1 {
+    background-color: #f2f2f2; /* Light gray */
+  }
+  
+  #column2 {
+    background-color: #d9d9d9; /* Medium gray */
+  }
+  
+  #column3 {
+    background-color: #bfbfbf; /* Dark gray */
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+  }
+  

@@ -59,4 +59,10 @@
   .next {
     right: 0;
   }
+
+  .slideshow-container {
+    background-image: url('/assets/images/team-bg.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
   

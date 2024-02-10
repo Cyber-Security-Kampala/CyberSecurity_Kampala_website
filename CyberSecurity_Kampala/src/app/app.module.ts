@@ -17,6 +17,7 @@ import { FooterComponent } from './footer/footer.component';
 import { TeamComponent } from './team/team.component';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { MatStepperModule } from '@angular/material/stepper';
+import { WeDoComponent } from './we-do/we-do.component';
 
 
 
@@ -28,7 +29,8 @@ import { MatStepperModule } from '@angular/material/stepper';
     DecoComponent,
     IntroductionComponent,
     FooterComponent,
-    TeamComponent
+    TeamComponent,
+    WeDoComponent
   ],
   imports: [
     BrowserModule,
