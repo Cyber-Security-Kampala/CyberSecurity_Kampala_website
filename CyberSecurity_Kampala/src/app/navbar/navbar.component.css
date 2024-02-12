@@ -20,10 +20,6 @@
 
 /* Header */
 
-	body {
-		position: relative;
-		padding-top: 5em;
-	}
 
 	#header {
 		background: #1c1c1c;
@@ -70,6 +66,7 @@
 			text-transform: none;
 			font-weight: normal;
 			padding: 0;
+			
 		}
 
 			#header .logo:hover {
@@ -285,3 +282,4 @@
 			}
 
 		}
+
