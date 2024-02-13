@@ -14,6 +14,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDividerModule } from '@angular/material/divider';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { FooterComponent } from './footer/footer.component';
+import { TeamComponent } from './team/team.component';
+import { ScrollingModule } from '@angular/cdk/scrolling';
+import { MatStepperModule } from '@angular/material/stepper';
+import { WeDoComponent } from './we-do/we-do.component';
+
 
 
 @NgModule({
@@ -23,7 +28,9 @@ import { FooterComponent } from './footer/footer.component';
     NavbarComponent,
     DecoComponent,
     IntroductionComponent,
-    FooterComponent
+    FooterComponent,
+    TeamComponent,
+    WeDoComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +39,13 @@ import { FooterComponent } from './footer/footer.component';
     MatToolbarModule,
     MatIconModule,
     MatFormFieldModule,
-    MatDividerModule
+    MatDividerModule,
+    ScrollingModule,
+    MatStepperModule
+  ],
+  exports: [
+    // Export MatStepperModule if you want to use the stepper in other modules
+    MatStepperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

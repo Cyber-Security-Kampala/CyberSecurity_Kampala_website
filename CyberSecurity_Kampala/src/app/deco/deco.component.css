@@ -1,5 +1,5 @@
 .landing-page {
-    background-image: url('/assets/images/home-bg.jpg'); /* replace with the path to your image */
+    background-image: url('/assets/images/alt-home-bg.jpg'); /* replace with the path to your image */
     background-size: cover; /* cover the entire page */
     background-position: center; /* center the image */
     height: 100vh; /* make the landing page full height */
@@ -10,7 +10,7 @@
   }
   
   .label {
-    color: #fff;
+    color: #f70909;
     font-size: 15px;
     font-weight: 400;
     text-transform: uppercase;
@@ -32,7 +32,7 @@
    }
    
    .email-input {
-    border: 1px solid #ccc;
+    border: 1px solid #f01a1a;
     padding: 10px;
     border-radius: 20px 0 0 20px;
     outline: none;
@@ -46,4 +46,22 @@
     border-radius: 0 20px 20px 0;
     cursor: pointer;
    }
-   
+
+
+   .emphasized-text {
+    font-family: 'Audiowide', cursive;
+    /* Add any other styles you want to share */
+  }
+  
+  .label .emphasized-text {
+    font-size: 80px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: block;
+    text-align: left;
+    font-family: 'Audiowide', cursive;
+}
+  

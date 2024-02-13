@@ -1,0 +1,24 @@
+<div class="team">
+    <div class="team__header">
+      <h1>Meet the Team</h1>
+    </div>
+    <div class="slideshow-container">
+      <div class="slides" [style.transform]="'translateX(' + (-currentIndex * 100) + '%)'">
+        <div *ngFor="let slide of slides" class="slide">
+          <div class="team-members">
+            <div *ngFor="let member of slide" class="team-member">
+              <img [src]="member.imageUrl" alt="{{ member.name }}">
+              <div class="text">
+                <h2>{{ member.name }}</h2>
+                <p>{{ member.position }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation arrows -->
+      <a class="prev" (click)="prevSlide()">&#10094;</a>
+      <a class="next" (click)="nextSlide()">&#10095;</a>
+    </div>
+  </div>
+  
