@@ -48,6 +48,7 @@ export class TeamComponent implements OnInit, OnDestroy {
       // Add more team members as needed
     ];
 
+
     // Prepare slides
     this.slides = this.chunkArray(this.teamMembers, 4);
 
@@ -65,13 +66,22 @@ export class TeamComponent implements OnInit, OnDestroy {
   }
 
   nextSlide() {
-    this.currentIndex = (this.currentIndex === this.slides.length - 1) ? 0 : (this.currentIndex + 1);
+    this.currentIndex = (this.currentIndex + 1) % this.slides.length;
   }
 
+  // Updated chunkArray function
   chunkArray(array: any[], chunkSize: number): any[] {
     const result = [];
     for (let i = 0; i < array.length; i += chunkSize) {
       result.push(array.slice(i, i + chunkSize));
+    }
+    // If the last slide has fewer than 4 team members, distribute them evenly across slides
+    const lastSlide = result[result.length - 1];
+    const remainingTeamMembers = 4 - lastSlide.length;
+    if (remainingTeamMembers > 0 && remainingTeamMembers < 4) {
+      for (let i = 0; i < remainingTeamMembers; i++) {
+        result[i % result.length].push(array[i]);
+      }
     }
     return result;
   }
