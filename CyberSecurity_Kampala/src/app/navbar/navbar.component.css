@@ -41,64 +41,62 @@
 			margin: 0 auto;
 			position: relative;
 		}
+		#header .inner .logo{
+			display: flex;
+			flex-wrap: wrap;
+			padding-top: 5px;
+			width: 250px;
+			height: inherit;
+		}
 
 			@media screen and (max-width: 480px) {
 
 				#header .inner {
 					max-width: 90%;
-					width: 90%;
+					width: 100%;
+				}
+				#header .inner.logo{
+					width: 80px;
+					padding-top: 20px;
+					padding-bottom: 20px;
+				}
+
+			}
+			@media screen and (max-width: 326px) {
+
+				#header .inner.logo{
+					width: 50%;	
+					margin: 30px;
+
 				}
 
 			}
 
 		#header .logo {
-			font-family: 'Pacifico', cursive;
 			display: inline-block;
 			height: inherit;
+			width: 180px;
 			left: 0;
 			line-height: inherit;
 			margin: 0;
 			padding: 0;
 			position: absolute;
 			top: 0;
-			color: #e5474b;
-			font-size: 1.75em;
-			text-transform: none;
-			font-weight: normal;
-			padding: 0;
+			transition: ease 0.2s;
+			cursor: pointer;
 			
 		}
 
 			#header .logo:hover {
-				color: rgba(229, 71, 75, 0.75);
+				transform: scale(0.75);
 			}
 
-		#header a {
-			-moz-transition: color 0.2s ease-in-out;
-			-webkit-transition: color 0.2s ease-in-out;
-			-ms-transition: color 0.2s ease-in-out;
-			transition: color 0.2s ease-in-out;
-			display: inline-block;
-			padding: 0 2em;
-			color: #ffffff;
-			text-decoration: none;
-			text-transform: uppercase;
-			font-weight: 700;
-			font-size: .85em;
-		}
-
-			#header a:hover {
-				color: rgba(255, 255, 255, 0.75);
-			}
-
-			#header a:last-child {
-				padding-right: 0em;
-			}
+		
 
 			@media screen and (max-width: 736px) {
 
-				#header a {
-					padding: 0 0.5em;
+				#header .logo{
+					width: 90%;
 				}
 
 			}
@@ -107,6 +105,9 @@
 
 		#header {
 			min-width: 320px;
+		}
+		#header .logo{
+			width: 60%;
 		}
 
 	}
