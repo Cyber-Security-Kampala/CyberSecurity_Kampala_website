@@ -7,7 +7,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
   styleUrls: ['./deco.component.css'],
 })
 export class DecoComponent implements OnInit {
-  words = ['-WHO WE ARE; EMPOWERING SECURITY:', 'SAFE GUARDING THE DIGITAL REALM', 'WITH VIGILANCE AND INNOVATION']; // Replace with your phrases
+  words = [' EMPOWERING SECURITY:', 'SAFE GUARDING THE DIGITAL REALM', 'WITH VIGILANCE AND INNOVATION']; // Replace with your phrases
   currentIndex =  0;
 
   ngOnInit() {

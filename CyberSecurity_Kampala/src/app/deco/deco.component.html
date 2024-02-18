@@ -1,19 +1,14 @@
-<div class="landing-page">
-  <!-- Your content here -->
+<!-- <div class="landing-page">
+
 
   <div class="label">
-    <!-- <h3>-WHO WE ARE</h3> -->
-    <!-- <h1>EMPOWERING SECURITY:</h1>
-    <h1>SAFE GUARDING THE DIGITAL</h1>
-    <h1>REALM</h1>
-    <h1>WITH VIGILANCE AND</h1>
-    <h1>INNOVATION</h1> -->
+
 
     <div class="word-slider">
       <span *ngIf="currentIndex ===   0" class="emphasized-text">{{ words[0] }}</span>
       <span *ngIf="currentIndex ===   1" class="emphasized-text">{{ words[1] }}</span>
       <span *ngIf="currentIndex ===   2" class="emphasized-text">{{ words[2] }}</span>
-      <!-- Add more spans if you have more phrases -->
+
     </div>
     
     
@@ -28,4 +23,23 @@
        
     </div>
   </div>
-</div>
+</div> -->
+
+<!-- Banner -->
+<section id="banner">
+  <div class="inner">
+    <h1>
+      -WHO WE ARE;
+      <span>
+        <div class="word-slider">
+          <span *ngIf="currentIndex === 0" class="emphasized-text">{{ words[0] }}</span>
+          <span *ngIf="currentIndex === 1" class="emphasized-text">{{ words[1] }}</span>
+          <span *ngIf="currentIndex === 2" class="emphasized-text">{{ words[2] }}</span>
+        </div>
+      </span>
+    </h1>
+    <ul class="actions">
+      <li><a href="#" class="button alt">Get Started</a></li>
+    </ul>
+  </div>
+</section>
