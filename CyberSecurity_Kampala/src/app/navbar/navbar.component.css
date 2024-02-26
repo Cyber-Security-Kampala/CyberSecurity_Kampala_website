@@ -45,8 +45,12 @@
 			display: flex;
 			flex-wrap: wrap;
 			padding-top: 5px;
+			width: 10%;
+			height: inherit; 
+		}
+		.logo img{
 			width: 250px;
-			height: inherit;
+			height: 90px;
 		}
 
 			@media screen and (max-width: 480px) {
