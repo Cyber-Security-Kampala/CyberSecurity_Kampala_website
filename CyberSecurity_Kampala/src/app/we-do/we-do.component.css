@@ -1241,3 +1241,13 @@
 			}
 
 		}
+
+		/* #three .inner {
+			display: flex;
+		  }
+		  
+		  #three .inner article {
+			flex: 1;
+			max-height: 100vh;
+			overflow: auto;
+		  } */
