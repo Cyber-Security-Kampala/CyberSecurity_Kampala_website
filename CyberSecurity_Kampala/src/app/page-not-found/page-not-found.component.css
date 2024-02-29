@@ -1,0 +1,84 @@
+/* page-not-found.component.css */
+
+.not-found-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .not-found-container h1 {
+    font-size: 6em;
+    margin-bottom: 1em;
+    position: relative;
+    color: #fff;
+  }
+  
+  .glitch {
+    text-transform: uppercase;
+    background: #000;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .glitch::before,
+  .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .glitch::before {
+    left: 2px;
+    text-shadow: -2px 0 #ff0000;
+    animation: glitch 1.5s infinite;
+  }
+  
+  .glitch::after {
+    left: -2px;
+    text-shadow: -2px 0 #0000ff;
+    animation: glitch 2s infinite;
+  }
+  
+  @keyframes glitch {
+    0% {
+      opacity: 1;
+    }
+    8% {
+      opacity: 0;
+    }
+    11% {
+      opacity: 1;
+    }
+    19% {
+      opacity: 0;
+    }
+    22% {
+      opacity: 1;
+    }
+    34% {
+      opacity: 0;
+    }
+    39% {
+      opacity: 1;
+    }
+    45% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .not-found-container a {
+    color: #007bff;
+    text-decoration: none;
+  }
