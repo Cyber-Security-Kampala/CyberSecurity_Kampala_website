@@ -18,6 +18,11 @@ import { TeamComponent } from './team/team.component';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { MatStepperModule } from '@angular/material/stepper';
 import { WeDoComponent } from './we-do/we-do.component';
+import { ABOUTComponent } from './about/about.component';
+import { PROJECTSComponent } from './projects/projects.component';
+import { COMMUNITYComponent } from './community/community.component';
+import { TRAININGComponent } from './training/training.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 
@@ -30,7 +35,12 @@ import { WeDoComponent } from './we-do/we-do.component';
     IntroductionComponent,
     FooterComponent,
     TeamComponent,
-    WeDoComponent
+    WeDoComponent,
+    ABOUTComponent,
+    PROJECTSComponent,
+    COMMUNITYComponent,
+    TRAININGComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
